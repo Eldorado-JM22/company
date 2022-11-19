@@ -1,3 +1,95 @@
+@import "global";
+@import "vereblas";
+@import "mixin'";
+@import "media";
+
+#hero {
+  .hero {
+    padding: 20px 0;
+
+    h1 {
+      @include main;
+    }
+
+    span {
+      @include main-span;
+    }
+
+    &--group {
+      @include df;
+      flex-wrap: wrap;
+
+      &--first {
+
+        &__img {
+          margin: 0 0 -20px -233px;
+        }
+
+        &--one {
+          @include block;
+
+          ul {
+            @include ul;
+          }
+
+          p {
+            @include para;
+          }
+        }
+
+        button {
+          @include btn;
+        }
+      }
+
+      &--second {
+
+        &__ima {
+          margin: 0 0 -20px -224px;
+        }
+
+        &--two {
+          @include block-two;
+
+          ul {
+            @include ul;
+          }
+
+          p {
+            @include para;
+          }
+        }
+
+        button {
+          @include btn;
+        }
+      }
+
+      &--third {
+
+        &__not {
+          margin: 0 0 -20px -206px;
+        }
+
+        &--three {
+          @include block-three;
+
+          ul {
+            @include ul;
+          }
+
+          p {
+            @include para;
+          }
+        }
+
+        button {
+          @include btn;
+        }
+      }
+
+    }
+  }
 @import "veraibles";
 @import "global";
 @import "mixin";

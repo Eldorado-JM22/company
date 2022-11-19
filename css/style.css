@@ -11,6 +11,281 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body button {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  #hero .hero--group {
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #hero .hero--group--first__image {
+    width: 90%;
+  }
+  #hero .hero--group--first__img {
+    margin: 0 0 -20px -188px;
+  }
+  #hero .hero--group--second__image {
+    width: 90%;
+  }
+  #hero .hero--group--second__ima {
+    margin: 0 0 -20px -224px;
+  }
+  #hero .hero--group--third__image {
+    width: 90%;
+  }
+  #hero .hero--group--third__not {
+    margin: 0 0 -20px -190px;
+  }
+}
+@media (max-width: 576px) {
+  #hero .hero--group--first__image {
+    width: 90%;
+  }
+  #hero .hero--group--first__img {
+    margin: 0 0 -20px -195px;
+  }
+  #hero .hero--group--second__image {
+    width: 90%;
+  }
+  #hero .hero--group--second__ima {
+    margin: 0 0 -20px -224px;
+  }
+  #hero .hero--group--third__image {
+    width: 90%;
+  }
+  #hero .hero--group--third__not {
+    margin: 0 0 -20px -192px;
+  }
+}
+@media (max-width: 451px) {
+  #hero .hero--group--first__image {
+    width: 90%;
+  }
+  #hero .hero--group--first__img {
+    margin: 0 0 -20px -248px;
+  }
+  #hero .hero--group--second__image {
+    width: 90%;
+  }
+  #hero .hero--group--second__ima {
+    margin: 0 0 -20px -224px;
+  }
+  #hero .hero--group--third__image {
+    width: 90%;
+  }
+  #hero .hero--group--third__not {
+    margin: 0 0 -20px -214px;
+  }
+}
+@media (max-width: 400px) {
+  #hero .hero--group--first__image {
+    width: 90%;
+  }
+  #hero .hero--group--first__img {
+    margin: 0 0 -20px -248px;
+  }
+  #hero .hero--group--second__image {
+    width: 90%;
+  }
+  #hero .hero--group--second__ima {
+    margin: 0 0 -20px -224px;
+  }
+  #hero .hero--group--third__image {
+    width: 90%;
+  }
+  #hero .hero--group--third__not {
+    margin: 0 0 -20px -174px;
+  }
+}
+@media (max-width: 376px) {
+  #hero .hero h1 {
+    font-size: 10px;
+  }
+  #hero .hero--group--first__image {
+    width: 90%;
+  }
+  #hero .hero--group--first__img {
+    margin: 0 0 -20px -248px;
+  }
+  #hero .hero--group--second__image {
+    width: 90%;
+  }
+  #hero .hero--group--second__ima {
+    margin: 0 0 -20px -224px;
+  }
+  #hero .hero--group--third__image {
+    width: 90%;
+  }
+  #hero .hero--group--third__not {
+    margin: 0 0 -20px -163px;
+  }
+}
+#hero .hero {
+  padding: 20px 0;
+}
+#hero .hero h1 {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+}
+#hero .hero span {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #E9D201;
+}
+#hero .hero--group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+#hero .hero--group--first__img {
+  margin: 0 0 -20px -233px;
+}
+#hero .hero--group--first--one {
+  padding: 40px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+#hero .hero--group--first--one ul {
+  font-family: "Golos", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+}
+#hero .hero--group--first--one p {
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+  padding: 10px 0;
+}
+#hero .hero--group--first button {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #181818;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  margin: 15px 0;
+  border: none;
+  transition: 0.6s;
+}
+#hero .hero--group--first button:hover {
+  background: transparent;
+  color: #d3c600;
+}
+#hero .hero--group--second__ima {
+  margin: 0 0 -20px -224px;
+}
+#hero .hero--group--second--two {
+  padding: 30px 62px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+#hero .hero--group--second--two ul {
+  font-family: "Golos", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+}
+#hero .hero--group--second--two p {
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+  padding: 10px 0;
+}
+#hero .hero--group--second button {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #181818;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  margin: 15px 0;
+  border: none;
+  transition: 0.6s;
+}
+#hero .hero--group--second button:hover {
+  background: transparent;
+  color: #d3c600;
+}
+#hero .hero--group--third__not {
+  margin: 0 0 -20px -206px;
+}
+#hero .hero--group--third--three {
+  padding: 39px 59px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+#hero .hero--group--third--three ul {
+  font-family: "Golos", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+}
+#hero .hero--group--third--three p {
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+  padding: 10px 0;
+}
+#hero .hero--group--third button {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #181818;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  margin: 15px 0;
+  border: none;
+  transition: 0.6s;
+}
+#hero .hero--group--third button:hover {
+  background: transparent;
+  color: #d3c600;
 body {
   font-family: "Poppins", sans-serif;
 }
