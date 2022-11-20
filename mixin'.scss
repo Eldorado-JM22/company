@@ -68,6 +68,15 @@
   padding: 10px 0;
 
 }
+@mixin para-one {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  //line-height: 140%;
+  color: #393939;
+  padding: 10px 0;
+
+}
 
 @mixin btn {
   font-family: 'Futura PT', sans-serif;
@@ -128,4 +137,10 @@
 @mixin use-para{
   background: #FFFFFF;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+@mixin laptop-text{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #393939;
 }

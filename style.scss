@@ -5,10 +5,11 @@
 
 #hero {
   .hero {
-    padding: 20px 0;
+    margin: 286px 0;
 
     h1 {
       @include main;
+      //padding: 40px 0;
     }
 
     span {
@@ -636,6 +637,90 @@
   }
 }
 
+#blocks {
+  .blocks {
+    &--text {
+      h1 {
+        font-family: 'Futura PT', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000;
+
+        span {
+          color: #EDD713;
+        }
+      }
+    }
+
+    &--block {
+      max-width: 1000px;
+      height: 550px;
+      left: 375px;
+      top: 1477px;
+
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(7.5px);
+
+      h4 {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #9E9E9E;
+        text-align: center;
+      }
+
+      &__image {
+        padding-left: 50px;
+        background: #F4F4F4;;
+        width: 50%;
+
+        &--backg {
+        }
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        color: #181818;
+      }
+
+      &__btn {
+        padding: 40px 0;
+        text-align: center;
+
+        button {
+          border: none;
+          padding: 20px 60px;
+          background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #181818;
+          transition: .6s;
+          margin: 0 0 0 -20px;
+
+          &:hover {
+            transform: scale(1.1);
+            background: transparent;
+            border: 2px solid yellow;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
 #use-prof {
   .use-prof {
     h1 {
@@ -653,6 +738,7 @@
       &--one {
         &--block {
           text-align: center;
+
           span {
             @include para;
           }
@@ -674,12 +760,13 @@
         }
       }
 
-      &--two{
+      &--two {
         padding-top: 21px;
 
 
         &--block {
           text-align: center;
+
           span {
             @include para;
           }
@@ -704,9 +791,11 @@
 
     &--gorp {
       @include df;
+
       &--one {
         &--block {
           text-align: center;
+
           span {
             @include para;
           }
@@ -732,4 +821,197 @@
 }
 
 
+#laptop {
+  .laptop {
+    @include df;
+    padding: 80px 0;
+    //flex-wrap: wrap;
+    &--img {
+      display: none;
+    }
 
+    &--one {
+      width: 90%;
+    }
+
+    &--text {
+      h3 {
+        @include main;
+      }
+
+      span {
+        @include main-span;
+      }
+
+      ul {
+        @include laptop-text;
+      }
+
+      p {
+        @include para-one;
+      }
+
+      &__btn {
+        @include df;
+        @include btn;
+        font-size: 15px;
+
+        ion-icon {
+          margin: 9px 7px;
+          border-radius: 50%;
+          background: $bg;
+          color: $white;
+          padding: 9px 9px;
+          transition: .6s;
+
+          &:hover {
+            background: transparent;
+            color: $bg;
+          }
+        }
+      }
+    }
+  }
+}
+
+#cleaning {
+  background: url("../img/kitchin.png") no-repeat center/cover;
+  min-height: 140vh;
+  margin: 80px 0;
+
+
+  .cleaning {
+    padding: 20px 0;
+
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        span {
+          color: #EDD713;
+        }
+
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+
+        button {
+          margin: 10px 20px;
+          padding: 20px 30px;
+          border: none;
+          font-size: 18px;
+          color: white;
+          background: rgba(245, 233, 52, 0.1);
+          backdrop-filter: blur(2px)
+
+        }
+      }
+    }
+
+    &--block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__img {
+        &--text {
+          width: 370px;
+          height: 380px;
+          margin-top: -10px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+          h1 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #393939;
+            padding: 10px 20px;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 30px;
+            color: #393939;
+            padding: 10px 20px;
+
+          }
+
+          button {
+            padding: 20px 70px;
+            border: none;
+            color: black;
+            margin: 10px 20px;
+            font-size: 20px;
+            background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+            transition: .6s;
+            &:hover{
+              border: 2px solid $yellow;
+              background: transparent;
+              color: $yellow;
+            }
+          }
+
+        }
+      }
+
+      &__one {
+        &--text {
+          width: 370px;
+          height: 380px;
+          margin-top: -10px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+          h1 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #393939;
+            padding: 10px 20px;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 30px;
+            color: #393939;
+            padding: 10px 20px;
+
+          }
+
+          button {
+            padding: 20px 56px;
+            border: none;
+            color: black;
+            margin: 40px 34px;
+            font-size: 20px;
+            background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+            transition: .6s;
+            &:hover{
+              background: transparent;
+              color: $yellow;
+              border: 2px solid $yellow;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -68,6 +68,7 @@
       h1 {
         max-font-size: 10px;
       }
+
       &--group {
         flex-wrap: wrap;
       }
@@ -78,6 +79,13 @@
     }
   }
 
+  #laptop {
+    .laptop {
+      &--one {
+        width: 90%;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -169,10 +177,29 @@
       }
     }
   }
+
+  #laptop {
+    .laptop {
+      &--one {
+        display: none;
+      }
+
+      &--img {
+        img{
+          display: block;
+
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
+  #laptop {
+    .laptop {
 
+    }
+  }
 }
 
 @media (max-width: 768px) {
