@@ -1,0 +1,79 @@
+@import "global";
+@import "mixin";
+@import "media";
+@import "veraibles";
+
+#remont {
+  padding: 150px 0 50px 0;
+  background: url("../img/bg.png") no-repeat center/cover;
+  min-height: 50vh;
+  .remont {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &--text {
+      h1 {
+        max-width: 709px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span {
+          color: yellow;
+        }
+      }
+      &__two {
+        padding: 32px 0;
+
+        max-width: 457px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+
+      }
+      &__end {
+        @include center();
+        max-width: 568px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding-bottom: 30px;
+        ion-icon {
+          font-size: 55px;
+          color: yellow;
+        }
+
+      }
+
+      button {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #181818;
+        border: none;
+        padding: 15px 40px;
+        transition: .10s;
+        background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+        &:hover {
+          transform: scale(1.1);
+          color: #FFFFFF;
+          background: transparent;
+          border: 2px solid yellow;
+        }
+      }
+
+
+    }
+
+    &--image {
+
+
+    }
+
+  }
+}

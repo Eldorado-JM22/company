@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#remont {
+  padding: 150px 0 50px 0;
+  background: url("../img/bg.png") no-repeat center/cover;
+  min-height: 50vh;
+}
+#remont .remont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#remont .remont--text h1 {
+  max-width: 709px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+#remont .remont--text h1 span {
+  color: yellow;
+}
+#remont .remont--text__two {
+  padding: 32px 0;
+  max-width: 457px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#remont .remont--text__end {
+  display: flex;
+  align-items: center;
+  max-width: 568px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+#remont .remont--text__end ion-icon {
+  font-size: 55px;
+  color: yellow;
+}
+#remont .remont--text button {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #181818;
+  border: none;
+  padding: 15px 40px;
+  transition: 0.1s;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+}
+#remont .remont--text button:hover {
+  transform: scale(1.1);
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
