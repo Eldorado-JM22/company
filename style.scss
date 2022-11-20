@@ -971,6 +971,46 @@
 
         }
       }
+      &__zero {
+        &--text {
+          width: 370px;
+          height: 380px;
+          margin-top: -10px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+          h1 {
+            font-size: 24px;
+            line-height: 29px;
+            color: #393939;
+            padding: 10px 20px;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 30px;
+            color: #393939;
+            padding: 10px 20px;
+
+          }
+
+          button {
+            padding: 20px 70px;
+            border: none;
+            color: black;
+            margin: 10px 20px;
+            font-size: 20px;
+            background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+            transition: .6s;
+            &:hover{
+              border: 2px solid $yellow;
+              background: transparent;
+              color: $yellow;
+            }
+          }
+
+        }
+      }
 
       &__one {
         &--text {
