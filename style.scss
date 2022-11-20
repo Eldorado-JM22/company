@@ -90,11 +90,117 @@
 
     }
   }
+}
+
 @import "veraibles";
 @import "global";
 @import "mixin";
 @import "media";
 
+#swiper {
+  background: url("../img/bg.png") no-repeat center/cover;
+  min-height: 50vh;
+  padding: 134px 0;
+
+  .swiper {
+    h4{
+      @include main;
+      color: #FFFFFF;
+      padding: 20px 0;
+    }
+    span{
+      @include main;
+      @include main-span;
+    }
+    .swiper--block {
+      img {
+        object-fit: cover;
+      }
+
+      @include swiper-block;
+
+      &__star {
+        button {
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          width: 20px;
+          height: 20px;
+          background-color: #F5E128;
+        }
+      }
+
+      img {
+        //width: 65%;
+        //height: 100px;
+        margin: 46px 0 0 74px;
+        z-index: 99;
+      }
+
+      h1 {
+        @include h1-one;
+
+      }
+
+      p {
+       @include uni;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 8px 0;
+
+      }
+
+      h2 {
+        @include uni;
+      }
+
+
+
+    }
+
+    .swiper--block__two {
+      img {
+        object-fit: cover;
+      }
+
+      @include swiper-block__two;
+
+      &--star {
+        button {
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          width: 20px;
+          height: 20px;
+          background-color: #F5E128;
+          margin: 6px 0;
+        }
+      }
+
+      img {
+        //width: 65%;
+        //height: 100px;
+        margin: 46px 0 0 74px;
+        z-index: 99;
+      }
+
+      h1 {
+        @include h1-one;
+        font-size: 13.56px;
+        line-height: 30px;
+      }
+
+      p {
+        @include uni;
+        font-weight: 400;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      h2 {
+        @include uni;
+      }
+
+
+    }
+  }
+}
 
 #header {
   padding: 30px 0;
@@ -103,6 +209,7 @@
   width: 100%;
   background: rgba(17, 16, 16, 0.85);
   backdrop-filter: blur(15px);
+
   .header {
     &--logo {
       padding-bottom: 30px;
@@ -221,8 +328,9 @@
         &--icon {
           display: flex;
           padding-top: 8px;
+
           ion-icon {
-            margin:  0 10px;
+            margin: 0 10px;
             padding: 9px 9px;
             border-radius: 50%;
             color: #48C95F;
@@ -263,6 +371,7 @@
           @include center();
           @include paragraph();
           color: $wt;
+
           &:hover {
             color: $yl;
             text-decoration-line: underline;
@@ -299,6 +408,7 @@
           background: $yl;
           margin-left: 5px;
         }
+
         a {
           font-weight: 400;
           font-size: 16px;
@@ -326,3 +436,6 @@
     }
   }
 }
+
+
+

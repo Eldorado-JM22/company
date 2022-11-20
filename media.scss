@@ -42,10 +42,48 @@
       //flex-direction: column;
     }
   }
+
+  #swiper {
+    .swiper {
+      &--block {
+        img {
+          margin: 46px 0 0 57px;
+        }
+      }
+
+      &--two {
+        img {
+          margin: 46px 0 0 57px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
+  #swiper {
+    .swiper {
+      &--block {
+        img {
+          margin: 46px 0 0 57px;
+        }
+      }
+
+      &--two {
+        img {
+          margin: 46px 0 0 57px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }
+
 
 @media (max-width: 992px) {
 
@@ -59,6 +97,7 @@
           &__image {
             width: 90%;
           }
+
           &__img {
             margin: 0 0 -20px -188px;
 
@@ -69,6 +108,7 @@
           &__image {
             width: 90%;
           }
+
           &__ima {
             margin: 0 0 -20px -224px;
           }
@@ -78,6 +118,7 @@
           &__image {
             width: 90%;
           }
+
           &__not {
             margin: 0 0 -20px -190px;
           }
@@ -96,6 +137,7 @@
           &__image {
             width: 90%;
           }
+
           &__img {
             margin: 0 0 -20px -195px;
 
@@ -106,6 +148,7 @@
           &__image {
             width: 90%;
           }
+
           &__ima {
             margin: 0 0 -20px -224px;
           }
@@ -115,6 +158,7 @@
           &__image {
             width: 90%;
           }
+
           &__not {
             margin: 0 0 -20px -192px;
           }
@@ -133,6 +177,7 @@
           &__image {
             width: 90%;
           }
+
           &__img {
             margin: 0 0 -20px -248px;
           }
@@ -142,6 +187,7 @@
           &__image {
             width: 90%;
           }
+
           &__ima {
             margin: 0 0 -20px -224px;
           }
@@ -151,9 +197,28 @@
           &__image {
             width: 90%;
           }
+
           &__not {
             margin: 0 0 -20px -214px;
           }
+        }
+      }
+    }
+  }
+  #swiper {
+    .swiper {
+      &--block {
+        img {
+          margin: 46px 0 0 -57px;
+        }
+      }
+
+      &--two {
+        img {
+          margin: 46px 0 0 57px;
+        }
+        p{
+          font-size: 10px;
         }
       }
     }
@@ -168,6 +233,7 @@
           &__image {
             width: 90%;
           }
+
           &__img {
             margin: 0 0 -20px -248px;
           }
@@ -177,6 +243,7 @@
           &__image {
             width: 90%;
           }
+
           &__ima {
             margin: 0 0 -20px -224px;
           }
@@ -186,6 +253,7 @@
           &__image {
             width: 90%;
           }
+
           &__not {
             margin: 0 0 -20px -174px;
           }
@@ -199,14 +267,16 @@
 @media (max-width: 376px) {
   #hero {
     .hero {
-      h1{
+      h1 {
         font-size: 10px;
       }
+
       &--group {
         &--first {
           &__image {
             width: 90%;
           }
+
           &__img {
             margin: 0 0 -20px -248px;
           }
@@ -216,6 +286,7 @@
           &__image {
             width: 90%;
           }
+
           &__ima {
             margin: 0 0 -20px -224px;
           }
@@ -225,9 +296,28 @@
           &__image {
             width: 90%;
           }
+
           &__not {
             margin: 0 0 -20px -163px;
           }
+        }
+      }
+    }
+  }
+  #swiper {
+    .swiper {
+      &--block {
+        img {
+          margin: 46px 0 0 57px;
+        }
+      }
+
+      &--two {
+        img {
+          margin: 46px 0 0 57px;
+        }
+        p{
+          font-size: 10px;
         }
       }
     }
@@ -237,12 +327,15 @@
 @media (max-width: 320px) {
 
 }
+
 @media (max-width: 1440px) {
 
 }
+
 @media (max-width: 1200px) {
 
 }
+
 @media (max-width: 1020px) {
   .hamburger-menu img {
 
@@ -254,6 +347,7 @@
     .header {
       &--logo {
         padding-top: 30px;
+
         &__image {
           img {
             margin-left: 20px;
@@ -282,7 +376,6 @@
             ion-icon {
 
 
-
             }
 
             &__in {
@@ -295,26 +388,28 @@
         }
 
         &__contactFour {
-            display: none !important;
-          }
+          display: none !important;
+        }
 
         &__contactEnd {
           display: none !important;
         }
 
-        }
+      }
 
       &--nav {
-display: none !important;
+        display: none !important;
 
       }
 
-        }
-      }
     }
+  }
+}
+
 @media (max-width: 1180px) {
 
 }
+
 @media (max-width: 1024px) {
 
 
