@@ -38,7 +38,7 @@
   color: #393939;
 }
 
-@mixin uni{
+@mixin uni {
   font-family: 'Golos', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -109,17 +109,23 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-@mixin swiper-block{
+@mixin swiper-block {
   width: 180%;
   //height: 600%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5px);
   max-height: 120vh;
 }
-@mixin swiper-block--two{
+
+@mixin swiper-block--two {
   width: 180%;
   height: 370px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5px);
   max-height: 120vh;
+}
+
+@mixin use-para{
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
