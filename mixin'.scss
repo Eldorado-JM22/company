@@ -1,0 +1,131 @@
+@mixin df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  //flex-wrap: wrap;
+}
+
+@mixin main {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+@mixin main-span {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #E9D201;
+}
+
+@mixin ul {
+
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #393939;
+}
+
+@mixin uni {
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+@mixin h1-one {
+
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 14.56px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@mixin para {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393939;
+  padding: 10px 0;
+
+}
+
+@mixin btn {
+  font-family: 'Futura PT', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #181818;
+  background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+  margin: 15px 0;
+  border: none;
+  transition: .6s;
+  &:hover {
+    background: transparent;
+    color: $yellow;
+  }
+}
+
+@mixin block {
+  padding: 40px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+@mixin block-two {
+  padding: 30px 62px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+@mixin block-three {
+  padding: 39px 59px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@mixin swiper-block {
+  width: 180%;
+  //height: 600%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+  max-height: 120vh;
+}
+
+@mixin swiper-block--two {
+  width: 180%;
+  height: 370px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+  max-height: 120vh;
+}
+
+@mixin use-para{
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
