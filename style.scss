@@ -1,0 +1,84 @@
+@import "global";
+@import "media";
+@import "mixin";
+@import "veraibles";
+
+#blocks {
+  .blocks {
+    &--text {
+      h1 {
+        font-family: 'Futura PT',sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000;
+        span {
+          color: #EDD713;
+        }
+      }
+    }
+
+    &--block {
+      max-width: 1000px;
+      height: 550px;
+      left: 375px;
+      top: 1477px;
+
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(7.5px);
+
+   h4    {
+     font-weight: 700;
+     font-size: 14px;
+     text-transform: uppercase;
+     color: #9E9E9E;
+     text-align: center;
+   }
+
+      &__image {
+        padding-left: 50px;
+        background: #F4F4F4;;
+        width: 50%;
+       &--backg {
+        }
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        color: #181818;
+      }
+
+      &__btn {
+        padding: 40px 0;
+        text-align: center;
+        button {
+          border: none;
+          padding: 20px 60px;
+          background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #181818;
+          transition: .4s;
+
+          &:hover {
+            transform: scale(1.1);
+            background: transparent;
+            border: 2px solid yellow;
+          }
+        }
+      }
+
+
+    }
+  }
+}

@@ -6,8 +6,59 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
+<section id="blocks">
+    <div class="container">
+        <div class="blocks">
+
+            <div class="blocks--text">
+                <h1><span>Ответьте на 7 вопросов</span> <br>
+                    и получите расчет стоимости ремонта</h1>
+            </div>
+
+            <div class="blocks--block">
+                <h4>ВОПРОС 1 ИЗ 7</h4>
+                <div class="blocks--block__image">
+
+                    <img src="./img/nion.svg" alt="img" class="blocks--block__image--backg">
+
+                </div>
+                <p>1. Где вы планируете делать ремонт?</p>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/swp.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp2.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp3.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp4.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp2.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp3.png" alt="img"></div>
+                        <div class="swiper-slide"><img src="./img/swp4.png" alt="img"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="blocks--block__btn">
+                    <button>Следующий вопрос</button>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
