@@ -68,6 +68,7 @@
   padding: 10px 0;
 
 }
+
 @mixin para-one {
   font-family: 'Golos', sans-serif;
   font-weight: 400;
@@ -80,7 +81,6 @@
 
 @mixin btn {
   font-family: 'Futura PT', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
@@ -134,13 +134,50 @@
   max-height: 120vh;
 }
 
-@mixin use-para{
+@mixin use-para {
   background: #FFFFFF;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-@mixin laptop-text{
+
+@mixin laptop-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
   color: #393939;
+}
+
+@mixin map-text {
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+
+@mixin map-para {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #393939;
+  text-align: center;
+  padding: 20px 0;
+}
+@mixin  footer{
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+@mixin footer-para{
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
 }

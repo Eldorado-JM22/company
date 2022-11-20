@@ -211,6 +211,12 @@
   width: 100%;
   background: rgba(17, 16, 16, 0.85);
   backdrop-filter: blur(15px);
+  animation: animate 2s ease-in-out;
+  @keyframes animate {
+    0% {
+      transform: translateY(-1000px);
+    }
+  }
 
   .header {
     &--logo {
@@ -440,10 +446,12 @@
 }
 
 #hero-one {
-  padding: 190px 0 50px 0;
+  padding: 250px 0 50px 30px;
   background: url("../img/back.png") no-repeat center/cover;
   min-height: 100vh;
   flex-wrap: wrap;
+  //margin: 60px 0;
+
 
   .hero-one {
     display: flex;
@@ -452,6 +460,12 @@
 
 
     &--title {
+      animation: hero-one 2s ease-in-out;
+      @keyframes hero-one {
+        0% {
+          transform: translateX(-1000px);
+        }
+      }
 
       h1 {
         padding-bottom: 27px;
@@ -560,6 +574,12 @@
       width: 464px;
       height: auto;
       background: #FFFFFF;
+      animation: hero-block 2s ease-in-out;
+      @keyframes hero-block {
+        0% {
+          transform: translateX(1000px);
+        }
+      }
 
       h1 {
         padding: 20px 0;
@@ -639,7 +659,16 @@
 
 #blocks {
   .blocks {
+    padding: 40px 0;
+
     &--text {
+      animation: text 2s ease-in-out;
+      @keyframes text {
+        0% {
+          transform: translateX(-1000px);
+        }
+      }
+
       h1 {
         font-family: 'Futura PT', sans-serif;
         font-weight: 600;
@@ -661,6 +690,15 @@
       height: 550px;
       left: 375px;
       top: 1477px;
+      animation: block 2s ease-in-out;
+      @keyframes block {
+        0% {
+          transform: translateX(1000px);
+        }
+        80% {
+          transform: translateX(-100px);
+        }
+      }
 
       background: rgba(255, 255, 255, 0.9);
       box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
@@ -820,7 +858,6 @@
   }
 }
 
-
 #laptop {
   .laptop {
     @include df;
@@ -868,6 +905,82 @@
             background: transparent;
             color: $bg;
           }
+        }
+      }
+    }
+  }
+}
+
+#casino {
+  .casino {
+    @include df;
+
+    &--text {
+      h3 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #232323;
+        padding: 20px 0;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $yellow;
+      }
+
+      &--circle {
+        display: flex;
+
+        p {
+          padding: 0 10px;
+        }
+      }
+
+      &--circle2 {
+        display: flex;
+        padding: 15px 0;
+
+        p {
+          padding: 0 10px;
+        }
+      }
+
+      &--circle3 {
+        display: flex;
+
+        p {
+          padding: 0 10px;
+        }
+      }
+
+      &--btn {
+
+        button {
+          @include btn;
+          display: flex;
+          &__one {
+            animation: circle 2s infinite;
+            @keyframes circle {
+              0%{
+                transform: rotate(360deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &--img {
+      width: 90%;
+      animation: casino 1s infinite;
+      @keyframes casino {
+        0%{
+          transform: rotate(360deg);
         }
       }
     }
@@ -962,7 +1075,8 @@
             font-size: 20px;
             background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
             transition: .6s;
-            &:hover{
+
+            &:hover {
               border: 2px solid $yellow;
               background: transparent;
               color: $yellow;
@@ -971,6 +1085,7 @@
 
         }
       }
+
       &__zero {
         &--text {
           width: 370px;
@@ -1002,7 +1117,8 @@
             font-size: 20px;
             background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
             transition: .6s;
-            &:hover{
+
+            &:hover {
               border: 2px solid $yellow;
               background: transparent;
               color: $yellow;
@@ -1043,7 +1159,8 @@
             font-size: 20px;
             background: linear-gradient(180deg, #FFF667 0%, #F5E934 100%);
             transition: .6s;
-            &:hover{
+
+            &:hover {
               background: transparent;
               color: $yellow;
               border: 2px solid $yellow;
@@ -1052,6 +1169,57 @@
 
         }
       }
+    }
+  }
+}
+
+#map {
+  .map {
+    h4 {
+      @include map-text;
+      text-align: center;
+    }
+
+    p {
+      @include map-para;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+#footer {
+  .footer {
+    @include df;
+    padding: 20px 90px;
+    background: #232323;
+
+
+    &--logo {
+      img {
+        width: 50%;
+      }
+
+      h5 {
+        @include footer;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+    }
+
+    h6 {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 140%;
+      color: #FFFFFF;
+
     }
   }
 }
